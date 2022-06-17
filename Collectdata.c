@@ -1,4 +1,4 @@
-#include <codepair.h>
+#include <Colorpair.h>
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",

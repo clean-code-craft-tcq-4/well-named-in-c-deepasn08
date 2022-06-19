@@ -1,7 +1,7 @@
 #include "ColorPair.h"
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
-    sprintf(buffer, "%s %s",
+    sprintf(buffer, "%s \t %s",
         MajorColorNames[colorPair->majorColor],
         MinorColorNames[colorPair->minorColor]);
 }
@@ -30,8 +30,7 @@ void printColorCodeManual()
       char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
       ColorPairToString(&colorvalues, colorPairNames);
 
-      printf("%d \t %s", i,colorPairNames );
+      printf("%d \t %s\n", i,colorPairNames );
     }
-    printf("\n");
 
 }

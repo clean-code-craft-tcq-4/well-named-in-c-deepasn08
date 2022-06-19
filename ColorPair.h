@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include "stdio.h"
 
-enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
+extern enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
+extern enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"

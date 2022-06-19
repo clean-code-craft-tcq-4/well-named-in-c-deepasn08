@@ -14,7 +14,10 @@ const int MAX_COLORPAIR_NAME_CHARS = 16;
 int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
-int main() {
+
+
+int main() 
+{
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
 
@@ -23,14 +26,6 @@ int main() {
 
     testPairToNumber(BLACK, ORANGE, 12);
     testPairToNumber(VIOLET, SLATE, 25);
+    printColorCodeManual();
 
-
-
-    /* testing collectiondata
-    const ColorPair colors = {.majorColor = 0, .minorColor = 0};
-    //const struct ColorPair* colorsAddress = &colors ;
-    char* buffer;
-    ColorPairToString( &colors, buffer);*/
-
-    return 0;
 }
